@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item</title>
+    <link rel="stylesheet" href="{% static 'siterender/css/siterender.css' %}">
+</head>
+<body>
+    <h1>{{ item.name }}</h1>
+    <p>Цена {{ item.price }}</p>
+    <p>Описание</p>
+    <p>{{ item.description }}</p>
+        <a href="{% url 'buy-item' %}">BUY</a>
+<!--        <button class="btn btn-success" type="submit"> BUY </button>-->
+</body>
+</html>

@@ -16,3 +16,4 @@ class Item(models.Model):
             MinValueValidator(0),
         ]
     )
+

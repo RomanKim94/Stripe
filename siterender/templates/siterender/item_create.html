@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item Create</title>
+</head>
+<body>
+    <div class="features">
+        <h1>Форма по добавлению Item</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.name }}<br>
+            {{ form.description }}<br>
+            {{ form.price }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit"> Создать товар </button>
+        </form>
+    </div>
+</body>
+</html>
